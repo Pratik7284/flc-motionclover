@@ -1,0 +1,72 @@
+Create a full professional company website for "FLC - Four Leaf Clover Media Solutions" inspired by the exact layout, animations, and design of https://www.schbang.com/.
+
+📌 Goals:
+- Design, structure, and experience should match Schbang.com as closely as possible.
+- Use HTML, CSS, JS (or optionally React/Next.js for performance).
+- Ensure it’s fully **responsive**, modern, and fast loading.
+
+📐 Page Structure:
+1. **Home Page (Single Scroll Page like Schbang)**:
+   - Full-screen smooth scroll experience
+   - Video or animated background on hero section
+   - Headline: “FLC Media Solutions”
+   - Tagline: “A creative healthcare and media partner”
+   - Scroll hint/icon at bottom
+
+2. **Sections (same format like Schbang)**:
+   - 🔹 Intro/About Section  
+     – Minimal text with bold typography  
+     – Short story of FLC, who we are
+
+   - 🔹 Our Expertise / Services Grid  
+     – Similar grid cards with hover animations  
+     – Cards like: Doctor Branding, Podcast Production, Pharma Social Media, Medical Video Shoots, Creative Design, Digital Strategy
+
+   - 🔹 Work / Portfolio Section  
+     – Large, fullscreen case-study thumbnails  
+     – Clicking opens fullscreen popup/modal like Schbang  
+     – Use dummy projects for now
+
+   - 🔹 What We Do Section  
+     – Showcase service pillars with subtle animations  
+     – Add healthcare, pharma & digital media focus
+
+   - 🔹 Careers Section  
+     – CTA “Come Work With Us”  
+     – Scroll-triggered animation  
+     – Optional job listing or application form
+
+   - 🔹 Contact Section  
+     – Email, phone, and a minimal form  
+     – Google Map embed (optional)  
+     – Social media links with icons
+
+3. **Header**:
+   - FLC Logo left, Menu right
+   - Sticky navigation with animated transition on scroll
+
+4. **Animations**:
+   - Use GSAP or AOS for scroll animations
+   - Smooth page transitions like Schbang
+   - Hover effects on portfolio
+
+5. **Fonts and Colors**:
+   - Font: Modern sans-serif like “Poppins” or “Satoshi”
+   - Colors: White background, Deep Green (#2E7D32), Black/Grey text
+   - Use big bold text, spacious layout, light shadows
+
+6. **Responsive Design**:
+   - Desktop, tablet, and mobile versions must all work perfectly
+   - Maintain layout adaptiveness like Schbang’s mobile view
+
+7. **Performance Optimization**:
+   - Lazy loading images/videos
+   - Smooth JS animation performance
+
+8. **Optional**:
+   - Add full-screen loading animation/logo (like Schbang)
+   - Integrate social links & blog later
+
+🛠️ Technologies (choose one stack):
+- Simple: HTML, CSS, JS
+- Advanced: React + GSAP or Next.js
