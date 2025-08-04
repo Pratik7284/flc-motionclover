@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import TextReveal from "@/components/ui/text-reveal";
+import MagneticButton from "@/components/ui/magnetic-button";
+import FloatingText from "@/components/ui/floating-text";
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
@@ -34,6 +37,16 @@ export default function Hero() {
     }
   };
 
+  const floatingServices = [
+    "content creation",
+    "seo",
+    "brand strategy", 
+    "research & analytics",
+    "video production",
+    "web development",
+    "media planning"
+  ];
+
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -44,6 +57,11 @@ export default function Hero() {
           className="w-full h-full object-cover"
         />
         <div className="video-overlay absolute inset-0"></div>
+      </div>
+
+      {/* Floating Text Animation */}
+      <div className="absolute top-20 left-0 right-0 z-10">
+        <FloatingText items={floatingServices} />
       </div>
 
       {/* Hero Content */}
@@ -99,21 +117,18 @@ export default function Hero() {
           variants={textVariants}
           custom={1.3}
         >
-          <Button
-            size="lg"
+          <MagneticButton
             className="bg-flc-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-flc-primary-light transition-all duration-300"
             onClick={() => scrollToSection("#contact")}
           >
             Start Your Project
-          </Button>
-          <Button
-            variant="outline"
-            size="lg"
+          </MagneticButton>
+          <MagneticButton
             className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-flc-primary transition-all duration-300"
             onClick={() => scrollToSection("#work")}
           >
             View Our Work
-          </Button>
+          </MagneticButton>
         </motion.div>
       </motion.div>
 

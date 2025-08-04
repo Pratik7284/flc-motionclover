@@ -1,3 +1,6 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -68,6 +71,26 @@
 
   html {
     scroll-behavior: smooth;
+  }
+
+  /* Mobile animation performance */
+  @media (max-width: 768px) {
+    * {
+      animation-duration: 0.5s !important;
+      transition-duration: 0.3s !important;
+    }
+  }
+
+  /* Smooth scrolling for all browsers */
+  html, body {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Hide cursor follower on mobile */
+  @media (max-width: 768px) {
+    .cursor-follower {
+      display: none !important;
+    }
   }
 }
 
@@ -158,6 +181,3 @@
     transform: scale(1); 
   }
 }
-
-/* Import Poppins font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');

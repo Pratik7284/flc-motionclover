@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Play, ExternalLink, Mic, BarChart3 } from "lucide-react";
 import PortfolioModal from "@/components/ui/portfolio-modal";
+import CtaBanner from "@/components/sections/cta-banner";
 
 export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState<any>(null);
@@ -219,6 +220,9 @@ export default function Portfolio() {
             </motion.div>
           </div>
         </motion.section>
+
+        {/* CTA Banner */}
+        <CtaBanner />
       </div>
 
       {/* Portfolio Modal */}
